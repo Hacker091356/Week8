@@ -7,17 +7,21 @@ public class oddSum{
         Scanner userInput = new Scanner(System.in);
         //Asking the user for input
         System.out.print("Enter a number: ");
-        int sum = 1;
         int num = userInput.nextInt();
-            for (int i =3; i <= num; i++){
+        //Closing scanner
+        userInput.close();
+        System.out.print("1 + ");
+        int sum = 1;
+            for (int i =3; i <= num; i+=2){
             sum = sum + i;
             if (i == num)
             {
             System.out.print(i + "; Ans = " + sum);
             }
             else
-            {
-                System.out.print(i +"+");
+            {   
+                System.out.print(i + " + ");
             }
+    }
     }
 }
